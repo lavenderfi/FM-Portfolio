@@ -24,7 +24,7 @@ export default function Experience() {
           </h5>
           <p className="card-text">
             Graduated in 2020 with minors in LGBT+ Studies and Religion
-          </p>k
+          </p>
           <p className="card-text">
             Gained skills in communication, research, and advocating for others.
           </p>
