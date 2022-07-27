@@ -35,3 +35,15 @@ code {
   margin:auto
 }
 
+.projects{
+  margin:auto;
+  width:70%
+}
+.projects iframe{
+    height:315px
+}
+.photo {
+  width:230px;
+  height: 260px;
+  border-radius: 50%;
+}

@@ -11,7 +11,7 @@ function App() {
      </header>
       <Router>
          <NavBar/>
-         <h1>Fiona Murray</h1>
+       <h1><span>Fiona Murray <img className='photo' src={'/pic.jpg'} alt='Fionas face'/></span></h1>
          <p>Upcoming Software Engineer</p>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
