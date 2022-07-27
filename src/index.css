@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -30,13 +30,8 @@ code {
   color: #61dafb;
 }
 
-.sidebar {
-  text-decoration: none;
-   display: 'flex';
-    height: '100vh';
-     overflow: 'scroll initial';
-   left:0;
-   top:0;
-   position:fixed;
-   
+.experience {
+  width:70%;
+  margin:auto
 }
+
