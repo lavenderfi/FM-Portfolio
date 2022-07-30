@@ -10,16 +10,16 @@ export default function NavBar () {
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
-    <ul className="navbar-nav">
-      <li className="nav-item active">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item">
         <Link className="nav-link" to='/experience'>Experience</Link>
       </li>
-      <li className="nav-item">
+      <li className="nav-item active">
         <Link className="nav-link" to='/projects'>Projects</Link>
       </li>
-      {/* <li className="nav-item">
-        <Link className="nav-link" to='/about'>More About Me</Link>
-      </li> */}
+      <li className="nav-item">
+        <Link className="nav-link" to='/about'>Contact Me</Link>
+      </li>
     </ul>
   </div>
 </nav>

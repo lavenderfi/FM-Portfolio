@@ -10,9 +10,16 @@ h1{
   font-family: 'Rajdhani', sans-serif !important;
 }
 
-
+footer{
+   border-top:1px solid rgb(204, 204, 204);
+}
+.home  button{
+  border: 1px solid rgb(0, 0, 0) !important;
+  color:black !important
+}
 .App {
   text-align: center;
+    background-color: rgb(230, 230, 230);
 }
 
 .App-header {
@@ -39,15 +46,16 @@ h1{
   width:70%
 }
 .projects iframe{
-    height:315px
+    height:355px
 }
 .photo {
   width:170px;
-  height: 200px;
+  height:170px;
   border-radius: 50%;
+  border:5px solid rgb(255, 255, 255)
 }
 .projects .card{
-  height:500px;
+  height:400px;
   width:100%;
   padding:5px;
 }
@@ -56,8 +64,28 @@ h1{
   height:30px;
   padding:5px
 }
-.home {
-  border: 1px solid grey;
+.home .card {
   width:80%;
-  margin: auto
+  margin:auto
+}
+
+.nav-link:hover{
+  text-decoration: overline !important;
+  color:rgb(255, 191, 107) !important;
+}
+.home  .button {
+  padding:5px
+}
+
+.card-title {
+  font-family: 'Chakra Petch', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+ .footer {
+ 
+  padding:7px
+}
+.card {
+  margin-bottom: 20px !important;
 }

@@ -14,7 +14,6 @@ export default function Projects() {
           </p>
         </div> 
          <iframe
-        
         src="https://www.youtube.com/embed/VBvD4EOo9Xc"
         title="YouTube video player"
         frameBorder="0"
