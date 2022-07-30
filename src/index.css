@@ -56,3 +56,8 @@ h1{
   height:30px;
   padding:5px
 }
+.home {
+  border: 1px solid grey;
+  width:80%;
+  margin: auto
+}
