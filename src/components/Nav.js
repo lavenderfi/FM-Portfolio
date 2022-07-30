@@ -17,9 +17,9 @@ export default function NavBar () {
       <li className="nav-item">
         <Link className="nav-link" to='/projects'>Projects</Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link className="nav-link" to='/about'>More About Me</Link>
-      </li>
+      </li> */}
     </ul>
   </div>
 </nav>

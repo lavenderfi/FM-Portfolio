@@ -11,13 +11,13 @@ function App() {
      </header>
       <Router>
          <NavBar/>
-       <h1><span>Fiona Murray <img className='photo' src={'/pic.jpg'} alt='Fionas face'/></span></h1>
+       <h1><span>Fiona   <img className='photo' src={'/pic.jpg'} alt='Fionas face'/></span>   Murray</h1>
          <p>Upcoming Software Engineer</p>
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/experience' element={<Experience/>}/>
           <Route exact path='/projects' element={<Projects/>}/>
-          <Route exact path='/about' />
+          {/* <Route exact path='/about' /> */}
         </Routes>
        </Router>
        
