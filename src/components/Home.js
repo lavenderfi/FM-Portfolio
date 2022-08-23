@@ -16,9 +16,7 @@ export default function Home() {
           <p className="card-text">
             Thus far, I have developed profficiency mainly in Javascript, and
             learned how to build responsive, full-stack programs with React and
-            Express. I have also gained familiarity with CSS and Bootstrap. In
-            the future, I hope to explore and develop skills in Python and React
-            Native as well.
+            Express. During my time at Fullstack Academy, I have also explored multiple technologies on my own such as Bootstrap, Phaser.io, and Firebase. I hope to continue learning many more technologies as I grow as a developer.
           </p>
           <p className="card-text">
             I hope to bring an emphasis on accessibility and diversity to every

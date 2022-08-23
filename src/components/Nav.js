@@ -1,28 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 export default function NavBar () {
     return (
     <div className='container-fluid'>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <Link className="navbar-brand" to="/">Home</Link>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNav">
-    <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
-        <Link className="nav-link" to='/experience'>Experience</Link>
-      </li>
-      <li className="nav-item active">
-        <Link className="nav-link" to='/projects'>Projects</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to='/about'>Contact Me</Link>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <Navbar bg="dark" expand="lg">
+      <Container>
+        <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            
+            <Nav.Link as={NavLink} to="/experience">Experience</Nav.Link>
+            <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
+            <Nav.Link as={NavLink} to="/about">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 </div>
     )
 }

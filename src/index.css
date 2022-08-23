@@ -73,6 +73,9 @@ footer{
   text-decoration: overline !important;
   color:rgb(255, 191, 107) !important;
 }
+.nav-link{
+  color:whitesmoke !important
+}
 .home  .button {
   padding:5px
 }
