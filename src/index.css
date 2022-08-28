@@ -1,5 +1,4 @@
 body {
-  display:flex;
   margin: auto;
   font-family: 'Chakra Petch', sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -21,6 +20,7 @@ footer{
 .App {
   text-align: center;
     background-color: rgb(230, 230, 230);
+    min-height: 100vh;
 }
 
 .App-header {

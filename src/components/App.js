@@ -3,7 +3,7 @@ import NavBar from './Nav';
 import Experience from './Experience';
 import Home from './Home';
 import Projects from './Projects.js';
-import Contact from './Contact';
+import Email from '../Email';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/experience' element={<Experience/>}/>
           <Route exact path='/projects' element={<Projects/>}/>
-          <Route exact path='/about' element={<Contact/>} />
+          <Route exact path='/email' element={<Email/>}/>
         </Routes>
        </Router>
        

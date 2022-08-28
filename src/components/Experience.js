@@ -10,11 +10,10 @@ export default function Experience() {
             Grace Hopper Program at FullStack Academy
           </Card.Title>
           <Card.Text>
-            Currently taking the 3-month intensive course, focusing on
-            Javascript and fullstack development.
+            A three-month intensive program focusing on full-stack Javascript development. Throughout this program, we built up practical knowledge of the entire stack of web development, building on each technology and applying these lessons with coding workshops to build different functional applications. During our senior phase, we worked on multiple full-stack applications in teams, building them from scratch based on what we had learned, as well as picking up new technologies as needed.
           </Card.Text>
           <Card.Text>
-            Profficient in Javascript, React, Redux, Express, PostreSQL, Sequelize, HTML, CSS, Boostrap, and learning more
+            Proficient in Javascript, React, Redux, Express, PostgreSQL, Sequelize, HTML, CSS, Bootstrap, and learning more
           </Card.Text>
         </Card.Body>
       </Card>
