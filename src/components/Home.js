@@ -1,65 +1,72 @@
-
+import { Button, Card, ListGroup } from 'react-bootstrap';
 
 export default function Home() {
-
   return (
     <div className="home">
-      <div className="card">
-        <div className="card-body">
-          <div className="button">
-            <a href={require("../assets/Resume.pdf")} download='Fiona-Murray-Resume'>
-            <button type="button" className="btn btn-outline-secondary">
-              Download my resume
-            </button>
+      <Card>
+        <Card.Body>
+            <a
+              href={require('../assets/Resume.pdf')}
+              download="Fiona-Murray-Resume"
+            >
+              <Button className="btn btn-dark btn-sm" style={{ margin: '5px' }}>
+                Download my resume
+              </Button>
+              <Button
+                className="btn btn-dark btn-sm"
+                onClick={() =>
+                  (window.location = 'mailto:fionam.dev@gmail.com')
+                }
+              >
+                fionam.dev@gmail.com
+              </Button>
             </a>
-          </div>
-          <p className="card-text">
-            Hello, welcome! I am an aspiring software engineer, currently
-            studying with FullStack Academy through the Grace Hopper Program
-          </p>
-          <p className="card-text">
-            Thus far, I have developed proficiency mainly in Javascript, and
-            learned how to build responsive, full-stack programs with React and
-            Express. During my time at Fullstack Academy, I have also explored
-            multiple technologies on my own such as Bootstrap, Phaser.io, and
-            Firebase. I am consistently exploring and learning different technologies and hope to continue learning throughout my career.
-          </p>
-          <p className="card-text">
-            I aspire to bring an emphasis on accessibility and diversity to every
-            project I build and work on. Making apps and programs more
+          <Card.Text>
+            I am a software developer, recently graduated from the
+            Grace Hopper program at Fullstack Academy.
+          </Card.Text>
+          <Card.Text>
+            I aspire to bring an emphasis on accessibility and diversity to
+            every project I build and work on. Making apps and programs more
             accessible to everyone, starting from the very beginning of
             development is an important goal of mine. When projects are built
             with these things in mind, it benefits everyone and leads to a more
-            comprehensive, and log-lasting application. 
-          </p>
-        </div>
-      </div>
+            comprehensive, and log-lasting application.
+          </Card.Text>
+        </Card.Body>
+      </Card>
 
-      <div className="card">
-        <div className="card-body">
-          <h4 className="card-title">Technologies Used</h4>
-          <p className="card-text">
-            <ul className="list-group">
-              <li className="list-group-item">Javascript</li>
-              <li className="list-group-item">Redux</li>
-              <li className="list-group-item">React</li>
-              <li className="list-group-item">HTML</li>
-              <li className="list-group-item">CSS</li>
-              <li className="list-group-item">Bootstrap</li>
-              <li className="list-group-item">Material UI</li>
-              <li className="list-group-item">Express</li>
-              <li className="list-group-item">PostgreSQL</li>
-              <li className="list-group-item">Sequelize</li>
-              <li className="list-group-item">Firebase</li>
-              <li className="list-group-item">Git CLI</li>
-              <li className="list-group-item">Heroku</li>
-              <li className="list-group-item">Phaser</li>
-              <li className="list-group-item">Stripe</li>
-              <li className="list-group-item">Leaflet</li>
-            </ul>
-          </p>
-        </div>
+
+          <h2>Technologies</h2>
+
+          <Card>
+          <Card.Body>
+            <ListGroup className='list' variant='flush'>
+              <Card.Title>Proficient</Card.Title>
+              <ListGroup.Item className='item'>Javascript</ListGroup.Item>
+              <ListGroup.Item className='item'>React</ListGroup.Item>
+              <ListGroup.Item className='item'>Redux</ListGroup.Item>
+              <ListGroup.Item className='item'>Express</ListGroup.Item>
+              <ListGroup.Item className='item'>Node.js</ListGroup.Item>
+              <ListGroup.Item className='item'>PostgreSQL</ListGroup.Item>
+              <ListGroup.Item className='item'>Sequelize</ListGroup.Item>
+              <ListGroup.Item className='item'>Firebase</ListGroup.Item>
+              <ListGroup.Item className='item'>Git</ListGroup.Item>
+              <ListGroup.Item className='item'>HTML</ListGroup.Item>
+              <ListGroup.Item className='item'>CSS</ListGroup.Item>
+              <ListGroup.Item className='item'>Bootstrap</ListGroup.Item>
+              <ListGroup.Item className='item'>Material UI</ListGroup.Item>
+              </ListGroup>
+              <ListGroup className='list' variant='flush'>
+              <Card.Title>Familiar</Card.Title>
+              <ListGroup.Item className='item'>Heroku</ListGroup.Item>
+              <ListGroup.Item className='item'>Phaser</ListGroup.Item>
+              <ListGroup.Item className='item'>Stripe</ListGroup.Item>
+              <ListGroup.Item className='item'>Leaflet</ListGroup.Item>
+              <ListGroup.Item className='item'>D3</ListGroup.Item>
+            </ListGroup>
+            </Card.Body>
+      </Card>
       </div>
-    </div>
   );
 }

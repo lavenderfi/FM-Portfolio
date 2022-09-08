@@ -1,50 +1,26 @@
-body {
+* {
   margin: auto;
-  font-family: 'Chakra Petch', sans-serif !important;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
 }
-
-h1{
-  font-family: 'Rajdhani', sans-serif !important;
+body {
+  background-color: #cccccc !important;
 }
 
 footer{
-   border-top:1px solid rgb(204, 204, 204);
-}
-.home  button{
-  border: 1px solid rgb(0, 0, 0) !important;
-  color:black !important
-}
-.App {
-  text-align: center;
-    background-color: rgb(230, 230, 230);
-    min-height: 100vh;
-}
-
-.App-header {
-  background-color: #fffaf6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
-}
-
-.App-link {
-  color: #61dafb;
+   border-top:1px solid 
 }
 
 .experience {
-  width:70%;
+
   margin:auto
 }
-
 .projects{
   margin:auto;
-  width:70%
+
 }
 .projects iframe{
     height:355px
@@ -53,42 +29,30 @@ footer{
   width:170px;
   height:170px;
   border-radius: 50%;
-  border:5px solid rgb(255, 255, 255)
-}
-.projects .card{
-  width:100%;
-  padding:5px;
+  border:5px solid #ffffff
 }
 .socials img {
   width:30px;
   height:30px;
   padding:5px
 }
-.home .card {
-  width:80%;
-  margin:auto
-}
 
 .nav-link:hover{
   text-decoration: overline !important;
-  color:rgb(255, 191, 107) !important;
 }
-.nav-link{
-  color:whitesmoke !important
+
+
+.card {
+margin:5px;
+background-color: #ffffff !important;
 }
-.home  .button {
-  padding:5px
+.item {
+
+  background:none !important;
 }
 
 .card-title {
-  font-family: 'Chakra Petch', sans-serif !important;
-  font-weight: 700 !important;
-}
+  font-family: 'Quicksand', sans-serif;
+  font-weight:600 !important;
 
- .footer {
- 
-  padding:7px
-}
-.card {
-  margin-bottom: 20px !important;
 }

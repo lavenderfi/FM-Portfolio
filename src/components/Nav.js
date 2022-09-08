@@ -6,20 +6,20 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function NavBar () {
     return (
-    <div className='container-fluid'>
-      <Navbar bg="dark" expand="lg">
+    <Container>
+      <Navbar bg="dark" variant="dark" className='navbar'>
       <Container>
-        <Nav.Link as={NavLink} to="/">Home</Nav.Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Brand as={NavLink} to="/">Home</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/experience">Experience</Nav.Link>
+            <Nav.Link as={NavLink} to="/experience">About</Nav.Link>
             <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
-            <Nav.Link as={NavLink} to="/email">Contact me</Nav.Link>
           </Nav>
-        </Navbar.Collapse>
+          <div className='socials'>
+           <a href='https://github.com/lavenderfi'><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' alt='github logo'/></a> 
+           <a href='https://www.linkedin.com/in/fiona-murray-58b206157'><img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt='linked-in logo'/></a> 
+        </div>
       </Container>
     </Navbar>
-</div>
+</Container>
     )
 }
