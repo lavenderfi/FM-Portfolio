@@ -1,5 +1,5 @@
-Checkout my portfolio here!
+Checkout my portfolio [here](https://fionamurray-dev.netlify.app)!
 
-https://fmportfolio.herokuapp.com/
+
 
 This was made using the create-react-app provided by Facebook

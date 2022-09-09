@@ -16,7 +16,7 @@ export default function Projects() {
               alt="D3-logo"
             />
             <img
-              src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png"
+              src="/firebase.png"
               alt="firebase-logo"
             />
           </div>
