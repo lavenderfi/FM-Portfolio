@@ -2,32 +2,31 @@
   margin: auto;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+  font-weight:400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 body {
-  background-color: #cccccc !important;
+  background-color: #ffffff !important;
+  display:flex
 }
-
-footer{
-   border-top:1px solid 
-}
-
 .experience {
-
-  margin:auto
+  margin:10%
 }
+
 .projects{
-  margin:auto;
-
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:10%;
+  
 }
-.projects iframe{
-    height:355px
+.projects .card {
+  border-top:none !important;
+  border-bottom: 3px solid pink !important
 }
 .photo {
-  width:170px;
-  height:170px;
+  width:40%;
   border-radius: 50%;
   border:5px solid #ffffff
 }
@@ -36,23 +35,62 @@ footer{
   height:30px;
   padding:5px
 }
-
 .nav-link:hover{
   text-decoration: overline !important;
 }
-
-
 .card {
-margin:5px;
-background-color: #ffffff !important;
+margin:auto !important;
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+background-color: none !important;
+margin-top:10px !important;
+border:none !important;
+border-top:3px solid pink !important;
+border-bottom: 3px solid pink !important;
 }
 .item {
-
   background:none !important;
 }
 
 .card-title {
   font-family: 'Quicksand', sans-serif;
   font-weight:600 !important;
+}
 
+.card-link {
+  text-decoration: none;
+  color:white
+}
+
+.home {
+  display:flex;
+  flex-direction: column;
+margin:10%
+}
+.navbar{
+width:100%;
+background-color: #3D5A80 !important;
+}
+
+.navbar a {
+  color: white !important
+}
+
+.home .card {
+  border:none;
+  border-top:3px solid pink !important
+}
+
+.list {
+  display:flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+.techs img {
+  width: 30px;
+}
+.techs {
+  padding:10px
 }
