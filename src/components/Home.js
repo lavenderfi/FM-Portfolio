@@ -3,8 +3,9 @@ import { Button, Card } from 'react-bootstrap';
 export default function Home() {
   return (
     <div className="home">
+      <div>
       <img className="photo" src={'/pic.jpg'} alt="Fionas face" />
-      <h1>FIONA MURRAY</h1>
+      <h1>FIONA MURRAY</h1></div>
       <div style={{ padding: '5px' }}>
         <a
           href={require('../assets/Resume.pdf')}
@@ -20,7 +21,7 @@ export default function Home() {
         >
           fionam.dev@gmail.com
         </Button>
-      </div>
+  
       <Card>
         <Card.Body>
           <Card.Text>
@@ -32,7 +33,7 @@ export default function Home() {
             every project I build and work on.
           </Card.Text>
         </Card.Body>
-      </Card>
+      </Card>    </div>
     </div>
   );
 }

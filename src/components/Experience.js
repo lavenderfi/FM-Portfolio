@@ -24,7 +24,7 @@ export default function Experience() {
           </Card.Text>
         </Card.Body>
       </Card>
-      <div>
+        <div className='techies'>
       <h2 style={{padding:'10px'}}>Technologies</h2>
 
       <Card>
