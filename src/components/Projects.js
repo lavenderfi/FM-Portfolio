@@ -72,6 +72,21 @@ export default function Projects() {
           </Card.Link>
         </Card.Body>
       </Card>
+      <Card>
+        <Card.Body>
+          <Card.Title>Eat Up!</Card.Title>
+          <Card.Text>
+            React Application that gives you a random recipe using the Tasty API
+          </Card.Text>
+          <div className="techs">
+            <img src="/jslogo.png" alt="javascript-logo" />
+            <img src="/logo8.png" alt="react.js-logo" />
+          </div>
+          <Card.Link href="https://github.com/lavenderfi/Eat-Up">
+            <Button variant="dark">Github</Button>
+          </Card.Link>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
