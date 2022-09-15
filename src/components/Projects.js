@@ -28,7 +28,7 @@ export default function Projects() {
 
       <Card>
         <Card.Body>
-          <Card.Title>Grace Shopper</Card.Title>
+          <Card.Title>Every Daisy of the Week</Card.Title>
           <Card.Text>A plant-themed online shopping website</Card.Text>
           <div className="techs">
             <img src="/jslogo.png" alt="javascript-logo" />
