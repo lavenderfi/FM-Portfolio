@@ -15,10 +15,7 @@ export default function Projects() {
               src="https://raw.githubusercontent.com/d3/d3-logo/master/d3-black.png"
               alt="D3-logo"
             />
-            <img
-              src="/firebase.png"
-              alt="firebase-logo"
-            />
+            <img src="/firebase.png" alt="firebase-logo" />
           </div>
           <Card.Link href="https://github.com/THEM-exclamationpoint/Webby">
             <Button variant="dark"> Github</Button>
@@ -53,6 +50,21 @@ export default function Projects() {
       </Card>
       <Card>
         <Card.Body>
+          <Card.Title>Eat Up!</Card.Title>
+          <Card.Text>
+            React Application that gives you a random recipe using the Tasty API
+          </Card.Text>
+          <div className="techs">
+            <img src="/jslogo.png" alt="javascript-logo" />
+            <img src="/logo8.png" alt="react.js-logo" />
+          </div>
+          <Card.Link href="https://github.com/lavenderfi/Eat-Up">
+            <Button variant="dark">Github</Button>
+          </Card.Link>
+        </Card.Body>
+      </Card>
+      <Card>
+        <Card.Body>
           <Card.Title>Junior Phase Final Project</Card.Title>
           <Card.Text>
             CRUD application for a database of students and campuses
@@ -69,21 +81,6 @@ export default function Projects() {
           </div>
           <Card.Link href="https://youtu.be/VBvD4EOo9Xc">
             <Button variant="dark">Walk-through</Button>
-          </Card.Link>
-        </Card.Body>
-      </Card>
-      <Card>
-        <Card.Body>
-          <Card.Title>Eat Up!</Card.Title>
-          <Card.Text>
-            React Application that gives you a random recipe using the Tasty API
-          </Card.Text>
-          <div className="techs">
-            <img src="/jslogo.png" alt="javascript-logo" />
-            <img src="/logo8.png" alt="react.js-logo" />
-          </div>
-          <Card.Link href="https://github.com/lavenderfi/Eat-Up">
-            <Button variant="dark">Github</Button>
           </Card.Link>
         </Card.Body>
       </Card>
