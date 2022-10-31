@@ -25,7 +25,7 @@ export default function Home() {
       <Card>
         <Card.Body>
           <Card.Text>
-            Welcome! I'm a software developer, recently graduated from the Grace
+            Welcome! I'm a software developer, graduated from the Grace
             Hopper program at Fullstack Academy.
           </Card.Text>
           <Card.Text>

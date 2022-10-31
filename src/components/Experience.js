@@ -21,6 +21,7 @@ export default function Experience() {
             I hope to use my background in Psychology to cater to what attracts
             people in a good application, as well as being sensitive to a
             diverse customer base.
+            I also worked as a mentor to new LGBTQ+ students.
           </Card.Text>
         </Card.Body>
       </Card>
@@ -31,7 +32,7 @@ export default function Experience() {
         <Card.Body>
           <Card.Title>Proficient</Card.Title>
           <ListGroup className="list" variant="flush">
-            <ListGroup.Item className="item">Javascript</ListGroup.Item>
+            <ListGroup.Item className="item">JavaScript</ListGroup.Item>
             <ListGroup.Item className="item">React</ListGroup.Item>
             <ListGroup.Item className="item">Redux</ListGroup.Item>
             <ListGroup.Item className="item">Express</ListGroup.Item>
@@ -51,6 +52,7 @@ export default function Experience() {
             <Card.Body>
           <Card.Title>Familiar</Card.Title>
           <ListGroup className="list" variant="flush">
+            <ListGroup.Item className="item">Python</ListGroup.Item>
             <ListGroup.Item className="item">Heroku</ListGroup.Item>
             <ListGroup.Item className="item">Phaser</ListGroup.Item>
             <ListGroup.Item className="item">Stripe</ListGroup.Item>
