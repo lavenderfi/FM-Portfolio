@@ -21,7 +21,7 @@ export default function NavBar() {
         <a href="https://github.com/lavenderfi">
           <img src="/github.png" alt="github logo" />
         </a>
-        <a href="https://www.linkedin.com/in/fiona-murray-58b206157">
+        <a href="https://www.linkedin.com/in/fiona-murray-dev/">
           <img src="/linkedin.png" alt="linked-in logo" />
         </a>
       </div>
