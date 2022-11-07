@@ -106,6 +106,12 @@ z-index: 999;
   padding:10px
 }
 
+.input {
+  width:50% !important;
+  margin:auto
+
+}
+
 @media screen and (max-width: 575px) {
   .home {
     flex-direction: column;

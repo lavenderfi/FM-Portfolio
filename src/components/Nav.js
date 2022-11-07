@@ -6,16 +6,11 @@ export default function NavBar() {
   return (
     <Navbar className="navbar">
       <Nav className="me-auto">
-       <Nav.Link href="#home" >
-          Home
- </Nav.Link> 
-        <Nav.Link href="#experience">
-          About
-</Nav.Link>
-     
-<Nav.Link href="#projects">
-          Projects
- </Nav.Link>
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#experience">About</Nav.Link>
+
+        <Nav.Link href="#projects">Projects</Nav.Link>
+        <Nav.Link href="#contact">Contact</Nav.Link>
       </Nav>
       <div className="socials">
         <a href="https://github.com/lavenderfi">
