@@ -8,6 +8,7 @@
 }
 body {
   display:flex;
+  background-color: #ffffff !important;
 }
 .experience {
   margin:10%
@@ -33,7 +34,8 @@ margin:10%;
   border:5px solid #ffffff
 }
 .socials img {
-  padding:5px
+  padding:5px;
+  width: 40px
 }
 .nav-link:hover{
   text-decoration: overline !important;
@@ -74,13 +76,14 @@ width:100% !important;
 top:0 !important;
 left:0 !important;
 right:0 !important;
-background-color: #3D5A80 !important;
+background-color: #3c6d75 !important;
 z-index: 999;
 }
 
 
 .navbar a {
-  color: white !important
+  color: rgb(255, 255, 255) !important;
+
 }
 
 .home .card {

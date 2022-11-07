@@ -2,6 +2,8 @@ import { Button, Card } from 'react-bootstrap';
 
 export default function Home() {
   return (
+    <section id='home'>
+      <h1> Hey there!</h1>
     <div className="home">
       <div>
       <img className="photo" src={'/pic.jpg'} alt="Fiona\'s face" />
@@ -30,7 +32,7 @@ export default function Home() {
           </Card.Text>
           <Card.Text>
             I aspire to bring an emphasis on accessibility and diversity to
-            every project I build and work on.
+            every project I build and work on. 
           </Card.Text>
           <Card.Text className='fun-fact'>
 
@@ -41,5 +43,6 @@ export default function Home() {
           <small> I spend my time outside of coding learning flips and tricks on roller-skates at skate-parks!</small>
       </div>          
     </div>
+    </section>
   );
 }

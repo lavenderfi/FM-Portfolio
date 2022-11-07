@@ -2,7 +2,10 @@ import { Card, Button } from 'react-bootstrap';
 
 export default function Projects() {
   return (
+    <section id='projects'> 
+     <h1>Projects</h1>
     <div className="projects">
+    
       <Card className="flip-card-back">
         <Card.Body>
           <Card.Title>Webby</Card.Title>
@@ -85,5 +88,6 @@ export default function Projects() {
         </Card.Body>
       </Card>
     </div>
+    </section>
   );
 }

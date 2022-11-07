@@ -1,21 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
 export default function NavBar() {
   return (
     <Navbar className="navbar">
       <Nav className="me-auto">
-        <Nav.Link as={NavLink} to="/">
+       <Nav.Link href="#home" >
           Home
-        </Nav.Link>
-        <Nav.Link as={NavLink} to="/experience">
+ </Nav.Link> 
+        <Nav.Link href="#experience">
           About
-        </Nav.Link>
-
-        <Nav.Link as={NavLink} to="/projects">
+</Nav.Link>
+     
+<Nav.Link href="#projects">
           Projects
-        </Nav.Link>
+ </Nav.Link>
       </Nav>
       <div className="socials">
         <a href="https://github.com/lavenderfi">
