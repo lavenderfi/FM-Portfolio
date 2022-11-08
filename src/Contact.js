@@ -108,7 +108,7 @@ export default function Contact() {
           {errors.message && (
             <span className="errorMessage">Please enter a message</span>
           )}
-          <Button as="input" type="submit" value="Submit" style={{margin:'5px'}}/>
+          <Button as="input" type="submit" value="Submit" style={{margin:'5px', backgroundColor:'#AA6373',border:'none'}}/>
         </Form>
         <ToastContainer />
       </div>

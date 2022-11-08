@@ -26,7 +26,7 @@ margin:10%;
 }
 .projects .card {
   border-top:none !important;
-  border-bottom: 3px solid pink !important
+  border-bottom: 3px solid #AA6373 !important
 }
 .photo {
   width:300px;
@@ -45,11 +45,11 @@ margin:auto !important;
 display:flex;
 flex-direction: row;
 flex-wrap:wrap;
-background-color: none !important;
+background-color: #ffffff !important;
 margin-top:10px !important;
 border:none !important;
-border-top:3px solid pink !important;
-border-bottom: 3px solid pink !important;
+border-top:3px solid #AA6373 !important;
+border-bottom: 3px solid #AA6373 !important;
 }
 .item {
   background:none !important;
@@ -76,7 +76,7 @@ width:100% !important;
 top:0 !important;
 left:0 !important;
 right:0 !important;
-background-color: #1a474e !important;
+background-color: #2E4052 !important;
 z-index: 999;
 }
 
@@ -88,7 +88,7 @@ z-index: 999;
 
 .home .card {
   border:none;
-  border-top:3px solid pink !important;
+  border-top:3px solid #AA6373 !important;
   margin-left: 20px !important;
 }
 
@@ -112,7 +112,7 @@ z-index: 999;
 
 }
 .line  {
-  border-bottom: 2px solid #ffe3ed !important;
+  border-bottom: 2px solid #e5bcc6 !important;
   width: 90%
 }
 @media screen and (max-width: 575px) {
