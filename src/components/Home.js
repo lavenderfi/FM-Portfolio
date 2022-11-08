@@ -5,8 +5,7 @@ export default function Home() {
     <section id='home'><div className='line'></div>
     <div className="home">
       <div>
-        
-      <img className="photo" src={'/pic.jpg'} alt="Fiona\'s face" />
+      <div className='photo'/>
       <h1>FIONA MURRAY</h1></div>
       <div style={{ padding: '5px' }}>
         <a
@@ -26,7 +25,7 @@ export default function Home() {
           </Card.Text>
           <Card.Text>
             I aspire to bring an emphasis on accessibility and diversity to
-            every project I build and work on. 
+            every project I build and work on. I am especially passionate about LGBTQ+ rights and mental health advocacy.
           </Card.Text>
           <Card.Text className='fun-fact'>
 

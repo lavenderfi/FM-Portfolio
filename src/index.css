@@ -1,3 +1,4 @@
+
 * {
   margin: auto;
   text-align: center;
@@ -11,9 +12,7 @@ body {
   background-color: #ffffff !important;
 }
 .experience {
-
   margin:10%;
-
 }
 
 .projects{
@@ -34,7 +33,20 @@ margin:10%;
 .photo {
   width:300px;
   border-radius: 50%;
-  border:5px solid #ffffff
+  border:3px solid #0c2c3b;
+  height: 300px;
+  background-size: 300px 300px;
+  background-image: url('/public/pic.jpg');
+  transition: 500ms;
+}
+.photo:hover{
+  transition: 500ms;
+  width:300px;
+  border-radius: 50%;
+  border:3px solid #134656;
+  height: 300px;
+  background-size: 300px 300px;
+  background-image: url('/public/pic2.JPG');
 }
 .socials img {
   padding:5px;
