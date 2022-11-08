@@ -1,20 +1,17 @@
 import Form from 'react-bootstrap/Form';
-import { Button } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
-
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
-
-
 
   const toastifySuccess = () => {
     toast('Form sent!', {
@@ -54,36 +51,41 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="contact">
-        <h1>Contact Me</h1>
+        <h1> &#128236; Contact Me</h1>
         <Form className="form" onSubmit={handleSubmit(onSubmit)}>
-          <Form.Label>Name</Form.Label>
-          <Form.Control
-            className="input"
-            type="text"
-            name="name"
-            {...register('name', {
-              required: { value: true, message: 'Please enter your name' },
-            })}
-          />{' '}
-          {errors.name && (
-            <span className="errorMessage">{errors.name.message}</span>
-          )}
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            className="input"
-            type="text"
-            name="email"
-            {...register('email', {
-              required: true,
-              pattern:
-                /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-            })}
-          />
-          {errors.email && (
-            <span className="errorMessage">
-              Please enter a valid email address
-            </span>
-          )}
+          <Row style={{justifyContent:'center'}}>
+            <Col>
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                className="input"
+                type="text"
+                name="name"
+                {...register('name', {
+                  required: { value: true, message: 'Please enter your name' },
+                })}
+              />{' '}
+              {errors.name && (
+                <span className="errorMessage">{errors.name.message}</span>
+              )}
+
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                className="input"
+                type="text"
+                name="email"
+                {...register('email', {
+                  required: true,
+                  pattern:
+                    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                })}
+              />
+              {errors.email && (
+                <span className="errorMessage">
+                  Please enter a valid email address
+                </span>
+              )}
+            </Col>
+          </Row>
           <Form.Label>Subject</Form.Label>
           <Form.Control
             className="input"
@@ -108,7 +110,16 @@ export default function Contact() {
           {errors.message && (
             <span className="errorMessage">Please enter a message</span>
           )}
-          <Button as="input" type="submit" value="Submit" style={{margin:'5px', backgroundColor:'#AA6373',border:'none'}}/>
+          <Button
+            as="input"
+            type="submit"
+            value="Submit"
+            style={{
+              margin: '5px',
+              backgroundColor: '#AA6373',
+              border: 'none',
+            }}
+          />
         </Form>
         <ToastContainer />
       </div>

@@ -11,8 +11,11 @@ body {
   background-color: #ffffff !important;
 }
 .experience {
-  margin:10%
+
+  margin:10%;
+
 }
+
 .projects{
   display:flex;
   flex-direction: row;
@@ -26,7 +29,7 @@ margin:10%;
 }
 .projects .card {
   border-top:none !important;
-  border-bottom: 3px solid #AA6373 !important
+  border-bottom: 3px solid #AA6373 !important;
 }
 .photo {
   width:300px;
@@ -57,9 +60,7 @@ border-bottom: 3px solid #AA6373 !important;
   text-decoration: underline !important;
   text-decoration-color:rgb(191, 191, 191) !important;
 }
-.techies {
-  margin-top:100px
-}
+
 
 .card-title {
   font-family: 'Quicksand', sans-serif;

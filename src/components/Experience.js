@@ -4,9 +4,9 @@ export default function Experience() {
   return (
     <section id='experience'>
       <div className='line'></div>
-    <div className="experience">
-      
-      <h2>Education</h2>
+    <div className="experience">  
+    <div className='edu'>
+    <h2> &#x1F4DA; Education</h2>
       <Card>
         <Card.Body>
           <Card.Title>Grace Hopper Program at FullStack Academy</Card.Title>
@@ -28,8 +28,9 @@ export default function Experience() {
           </Card.Text>
         </Card.Body>
       </Card>
+      </div>
         <div className='techies'>
-      <h2 style={{padding:'10px'}}>Technologies</h2>
+      <h2 style={{padding:'10px'}}> &#128187; Technologies</h2>
 
       <Card>
         <Card.Body>
