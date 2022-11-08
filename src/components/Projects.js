@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 export default function Projects() {
   return (
     <section id='projects'> 
-     <h1>Projects</h1>
+     <div className='line'></div>
     <div className="projects">
     
       <Card className="flip-card-back">

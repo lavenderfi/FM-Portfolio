@@ -2,10 +2,10 @@ import { Button, Card } from 'react-bootstrap';
 
 export default function Home() {
   return (
-    <section id='home'>
-      <h1> Hey there!</h1>
+    <section id='home'><div className='line'></div>
     <div className="home">
       <div>
+        
       <img className="photo" src={'/pic.jpg'} alt="Fiona\'s face" />
       <h1>FIONA MURRAY</h1></div>
       <div style={{ padding: '5px' }}>
@@ -14,15 +14,9 @@ export default function Home() {
           download="Fiona-Murray-Resume"
         >
           <Button className="btn btn-dark btn-sm" style={{ margin: '5px' }}>
-            Resume
+            My Resume
           </Button>
         </a>
-        <Button
-          className="btn btn-dark btn-sm"
-          onClick={() => (window.location = 'mailto:fionam.dev@gmail.com')}
-        >
-          fionam.dev@gmail.com
-        </Button>
   
       <Card>
         <Card.Body>

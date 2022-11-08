@@ -3,7 +3,7 @@ import { Card, ListGroup } from 'react-bootstrap';
 export default function Experience() {
   return (
     <section id='experience'>
-      <h1>About Me</h1>
+      <div className='line'></div>
     <div className="experience">
       
       <h2>Education</h2>

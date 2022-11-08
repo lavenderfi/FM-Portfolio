@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
+
   const {
     register,
     handleSubmit,
@@ -60,7 +61,6 @@ export default function Contact() {
             className="input"
             type="text"
             name="name"
-
             {...register('name', {
               required: { value: true, message: 'Please enter your name' },
             })}
@@ -73,7 +73,6 @@ export default function Contact() {
             className="input"
             type="text"
             name="email"
-
             {...register('email', {
               required: true,
               pattern:
@@ -90,7 +89,6 @@ export default function Contact() {
             className="input"
             type="text"
             name="subject"
-
             {...register('subject', {
               required: { value: true, message: 'Please enter a subject' },
             })}
@@ -103,7 +101,6 @@ export default function Contact() {
             className="input"
             as="textarea"
             name="message"
-
             {...register('message', {
               required: true,
             })}
@@ -111,7 +108,7 @@ export default function Contact() {
           {errors.message && (
             <span className="errorMessage">Please enter a message</span>
           )}
-          <Button as="input" type="submit" value="Submit" />
+          <Button as="input" type="submit" value="Submit" style={{margin:'5px'}}/>
         </Form>
         <ToastContainer />
       </div>

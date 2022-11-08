@@ -111,7 +111,10 @@ z-index: 999;
   margin:auto
 
 }
-
+.line  {
+  border-bottom: 2px solid #ffe3ed !important;
+  width: 90%
+}
 @media screen and (max-width: 575px) {
   .home {
     flex-direction: column;
