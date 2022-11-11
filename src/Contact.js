@@ -50,66 +50,73 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="contact">
         <h1> &#128236; Contact Me</h1>
-        <Form className="form" onSubmit={handleSubmit(onSubmit)}>
-          <Row style={{justifyContent:'center'}}>
-            <Col>
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                className="input"
-                type="text"
-                name="name"
-                {...register('name', {
-                  required: { value: true, message: 'Please enter your name' },
-                })}
-              />{' '}
-              {errors.name && (
-                <span className="errorMessage">{errors.name.message}</span>
-              )}
+        <Form onSubmit={handleSubmit(onSubmit)}>
 
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                className="input"
-                type="text"
-                name="email"
-                {...register('email', {
-                  required: true,
-                  pattern:
-                    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                })}
-              />
-              {errors.email && (
-                <span className="errorMessage">
-                  Please enter a valid email address
-                </span>
-              )}
-            </Col>
-          </Row>
-          <Form.Label>Subject</Form.Label>
-          <Form.Control
-            className="input"
-            type="text"
-            name="subject"
-            {...register('subject', {
-              required: { value: true, message: 'Please enter a subject' },
-            })}
-          />{' '}
-          {errors.subject && (
-            <span className="errorMessage">{errors.subject.message}</span>
-          )}
-          <Form.Label>Message</Form.Label>
-          <Form.Control
-            className="input"
-            as="textarea"
-            name="message"
-            {...register('message', {
-              required: true,
-            })}
-          />
-          {errors.message && (
-            <span className="errorMessage">Please enter a message</span>
-          )}
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="formGridName" >
+                <Form.Label>Name</Form.Label>
+                <Form.Control
+                  className="input"
+                  type="text"
+                  name="name"
+                  {...register('name', {
+                    required: {
+                      value: true,
+                      message: 'Please enter your name',
+                    },
+                  })}
+                />{' '}
+                {errors.name && (
+                  <span className="errorMessage">{errors.name.message}</span>
+                )}
+              </Form.Group>
+              <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  className="input"
+                  type="text"
+                  name="email"
+                  {...register('email', {
+                    required: true,
+                    pattern:
+                      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                  })}
+                />
+                {errors.email && (
+                  <span className="errorMessage">
+                    Please enter a valid email address
+                  </span>
+                )}
+              </Form.Group>
+            </Row>
+            <Form.Group className='mb-3'>
+            <Form.Label>Subject</Form.Label>
+            <Form.Control
+              className="input"
+              type="text"
+              name="subject"
+              {...register('subject', {
+                required: { value: true, message: 'Please enter a subject' },
+              })}
+            />{' '}
+            {errors.subject && (
+              <span className="errorMessage">{errors.subject.message}</span>
+            )}</Form.Group>
+            <Form.Group className='mb-3'>
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              className="input"
+              as="textarea"
+              name="message"
+              {...register('message', {
+                required: true,
+              })}
+            />
+            {errors.message && (
+              <span className="errorMessage">Please enter a message</span>
+            )}</Form.Group>
+
           <Button
             as="input"
             type="submit"
@@ -122,7 +129,6 @@ export default function Contact() {
           />
         </Form>
         <ToastContainer />
-      </div>
     </section>
   );
 }

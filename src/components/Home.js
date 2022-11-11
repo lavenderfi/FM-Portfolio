@@ -12,7 +12,11 @@ export default function Home() {
           href={require('../assets/Resume.pdf')}
           download="Fiona-Murray-Resume"
         >
-          <Button className="btn btn-dark btn-sm" style={{ margin: '5px' }}>
+          <Button className="btn btn-dark btn-sm" style={{
+              margin: '5px',
+              backgroundColor: '#AA6373',
+              border: 'none',
+            }}>
             My Resume
           </Button>
         </a>

@@ -36,7 +36,7 @@ margin:10%;
   border:3px solid #0c2c3b;
   height: 300px;
   background-size: 300px 300px;
-  background-image: url('/public/pic.jpg');
+  background-image: url('/public/one.jpg');
   transition: 500ms;
 }
 .photo:hover{
@@ -46,7 +46,7 @@ margin:10%;
   border:3px solid #134656;
   height: 300px;
   background-size: 300px 300px;
-  background-image: url('/public/pic2.JPG');
+  background-image: url('/public/picpic.jpg');
 }
 .socials img {
   padding:5px;
@@ -94,6 +94,9 @@ z-index: 999;
 }
 
 
+.techies .card {
+  margin-left: 10px !important;
+}
 .navbar a {
   color: rgb(255, 255, 255) !important;
 
@@ -119,15 +122,13 @@ z-index: 999;
   padding:10px
 }
 
-.input {
-  width:50% !important;
-  margin:auto
 
-}
+
 .line  {
   border-bottom: 2px solid #e5bcc6 !important;
   width: 90%
 }
+
 @media screen and (max-width: 575px) {
   .home {
     flex-direction: column;
@@ -135,4 +136,5 @@ z-index: 999;
   .projects {
     flex-direction: column;
   }
+
 }

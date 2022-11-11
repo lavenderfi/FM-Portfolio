@@ -26,13 +26,16 @@ export default function Projects() {
           <Card.Link href="https://webby-social.netlify.app">
             <Button variant="dark">Live</Button>
           </Card.Link>
+          <Card.Link href="https://www.youtube.com/watch?v=aT0Iyc1XshI">
+            <Button variant="dark">Walk-through</Button>
+          </Card.Link>
         </Card.Body>
       </Card>
 
       <Card>
         <Card.Body>
           <Card.Title>Every Daisy of the Week</Card.Title>
-          <Card.Text>A plant-themed online shopping website</Card.Text>
+          <Card.Text>An e-commerce web application</Card.Text>
           <div className="techs">
             <img src="/jslogo.png" alt="javascript-logo" />
             <img src="/logo8.png" alt="react.js-logo" />
@@ -55,7 +58,7 @@ export default function Projects() {
         <Card.Body>
           <Card.Title>Eat Up!</Card.Title>
           <Card.Text>
-            React Application that gives you a random recipe using the Tasty API
+            Recipe generator using the Tasty API
           </Card.Text>
           <div className="techs">
             <img src="/jslogo.png" alt="javascript-logo" />
