@@ -15,21 +15,12 @@ body {
   margin:10%;
 }
 
-.projects{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin:10%;
-}
 .home {
   display:flex;
   flex-direction: row;
 margin:10%;
 }
-.projects .card {
-  border-top:none !important;
-  border-bottom: 3px solid #AA6373 !important;
-}
+
 .photo {
   width:300px;
   border-radius: 50%;
@@ -119,22 +110,63 @@ z-index: 999;
   height:30px;
 }
 .techs {
-  padding:10px
+  padding:10px;
+  margin:10px
 }
-
 
 
 .line  {
   border-bottom: 2px solid #e5bcc6 !important;
-  width: 90%
+  width: 90%;
+  margin:10px
+}
+.proj {
+  background-color: #AA6373 !important;
+  color:white  !important;
+}
+.mySwiper {
+  width: 600px;
+  height:300px;
+  margin:10%
+}
+.swiper-button-next {
+   color: white !important;
+  opacity: 20% !important;
+  }
+  
+.swiper-button-prev {
+   color: white !important;
+  opacity: 20% !important;
+  }
+  .proj a {
+    margin:5px
+  }
+
+@media screen and (min-width: 640px) {
+  .mySwiper {
+    width: 600px;
+    height:300px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mySwiper {
+    width: 600px;
+    height:300px
+  }
 }
 
 @media screen and (max-width: 575px) {
   .home {
     flex-direction: column;
   }
-  .projects {
-    flex-direction: column;
-  }
-
+.mySwiper {
+  width: 300px
+}
+.swiper-button-next{
+  display:none !important
+}
+.swiper-button-prev{
+  display:none !important
+}
 }
