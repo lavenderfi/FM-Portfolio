@@ -38,6 +38,7 @@ export default function Experience() {
           <Card.Title>Languages</Card.Title>
           <ListGroup className="list" variant="flush">
             <ListGroup.Item className="item">JavaScript</ListGroup.Item>
+            <ListGroup.Item className="item">Node.js</ListGroup.Item>
             <ListGroup.Item className="item">HTML</ListGroup.Item>
             <ListGroup.Item className="item">CSS</ListGroup.Item>
             <ListGroup.Item className="item">Python</ListGroup.Item>
@@ -70,7 +71,6 @@ export default function Experience() {
             <Card.Body>
           <Card.Title>Other</Card.Title>
           <ListGroup className="list" variant="flush">
-          <ListGroup.Item className="item">Node.js</ListGroup.Item>
             <ListGroup.Item className="item">Heroku</ListGroup.Item>
             <ListGroup.Item className="item">Stripe</ListGroup.Item>
             <ListGroup.Item className="item">Git</ListGroup.Item>

@@ -5,7 +5,7 @@ export default function Home() {
     <section id='home'><div className='line'></div>
     <div className="home">
       <div>
-      <div className='photo'/>
+      <div className='photo' aria-label={'Fiona Murray\'s profile pictures'}/>
       <h1>FIONA MURRAY</h1></div>
       <div style={{ padding: '5px' }}>
         <a
