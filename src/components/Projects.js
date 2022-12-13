@@ -1,8 +1,6 @@
-import { Card } from 'react-bootstrap';
 import projects from './projectData'
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-
 
 import { Autoplay, Navigation, Pagination,A11y} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,7 +19,7 @@ export default function Projects() {
         },
         // when window width is >= 768px
         768: {
-          width: 600,
+          width: 700,
           slidesPerView: 1,
         },
       }}
@@ -37,9 +35,9 @@ export default function Projects() {
       >
          {projects.map(project => {
       return (
-        <SwiperSlide>
-      <Card className='proj'>
-        <Card.Body key={project.title}>
+        <SwiperSlide className='proj'>
+      <div >
+        <div key={project.title}>
             <h1>{project.title}</h1>
          <p>{project.description}</p> 
  
@@ -64,8 +62,8 @@ export default function Projects() {
               <a className='btn btn-dark' role='button' href={project.walkThrough}>
               Walk-Through
               </a>
-           } </Card.Body>   
-           </Card>   
+           } </div>   
+           </div>   
              </SwiperSlide>
       )
     })}
