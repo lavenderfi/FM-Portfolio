@@ -15,9 +15,9 @@ export default function Experience() {
       </Card>
 
       <Card>
-        <Card.Body>
-          <Card.Title>Bachelor's in Psychology</Card.Title>
-          <Card.Title>Hofstra University</Card.Title>
+        <Card.Body>     
+           <Card.Title>Hofstra University</Card.Title>
+          <Card.Subtitle>BA of Psychology</Card.Subtitle>
           <Card.Text>2020</Card.Text>
           <Card.Text>
             Gained skills in communication, research, and advocating for others.
@@ -60,24 +60,17 @@ export default function Experience() {
       </Card>
           <Card>
             <Card.Body>
-          <Card.Title>Databases</Card.Title>
+          <Card.Title>Databases/Other</Card.Title>
           <ListGroup className="list" variant="flush">
           <ListGroup.Item className="item">PostgreSQL</ListGroup.Item>
             <ListGroup.Item className="item">Firebase</ListGroup.Item>
-          </ListGroup>
-        </Card.Body>
-      </Card>
-          <Card>
-            <Card.Body>
-          <Card.Title>Other</Card.Title>
-          <ListGroup className="list" variant="flush">
             <ListGroup.Item className="item">Heroku</ListGroup.Item>
             <ListGroup.Item className="item">Stripe</ListGroup.Item>
             <ListGroup.Item className="item">Git</ListGroup.Item>
-
           </ListGroup>
         </Card.Body>
       </Card>
+
       </div>
     </div>
     </section>

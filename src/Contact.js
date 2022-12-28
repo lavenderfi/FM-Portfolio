@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className='contact'>
         <h1> &#128236; Contact Me</h1>
         <Form onSubmit={handleSubmit(onSubmit)}>
 

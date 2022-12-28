@@ -29,7 +29,7 @@ export default function Home() {
           </Card.Text>
           <Card.Text>
             I aspire to bring an emphasis on accessibility and diversity to
-            every project I build and work on. I am especially passionate about LGBTQ+ rights and mental health advocacy.
+            every project I build and work on. 
           </Card.Text>
           <Card.Text className='fun-fact'>
 

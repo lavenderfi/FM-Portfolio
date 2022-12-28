@@ -9,7 +9,8 @@
 }
 body {
   display:flex;
-  background-color: #ffffff !important;
+  background-color: #192231 !important;
+  color: #e9e7da !important
 }
 .experience {
   margin:10%;
@@ -24,7 +25,7 @@ margin:10%;
 .photo {
   width:300px;
   border-radius: 50%;
-  border:3px solid #0c2c3b;
+  border:3px solid #985e6d;
   height: 300px;
   background-size: 300px 300px;
   background-image: url('/public/one.jpg');
@@ -34,7 +35,7 @@ margin:10%;
   transition: 500ms;
   width:300px;
   border-radius: 50%;
-  border:3px solid #134656;
+  border:3px solid #985e6d;
   height: 300px;
   background-size: 300px 300px;
   background-image: url('/public/picpic.jpg');
@@ -51,17 +52,18 @@ margin:auto !important;
 display:flex;
 flex-direction: row;
 flex-wrap:wrap;
-background-color: #ffffff !important;
+background-color: #192231 !important;
 margin-top:10px !important;
 border:none !important;
-border-top:3px solid #AA6373 !important;
-border-bottom: 3px solid #AA6373 !important;
+border-top:3px solid #985e6d !important;
+border-bottom: 3px solid #985e6d !important;
 }
 .item {
   background:none !important;
   border: none !important;
   text-decoration: underline !important;
   text-decoration-color:rgb(191, 191, 191) !important;
+  color:white !important
 }
 
 
@@ -75,12 +77,13 @@ border-bottom: 3px solid #AA6373 !important;
   color:white
 }
 .navbar{
-  position:sticky!important;
+position:sticky!important;
 width:100% !important;
 top:0 !important;
 left:0 !important;
 right:0 !important;
-background-color: #2E4052 !important;
+background-color: #98878f !important;
+background-image: linear-gradient(to right, #494e6b, #985e6d);
 z-index: 999;
 }
 
@@ -95,7 +98,7 @@ z-index: 999;
 
 .home .card {
   border:none;
-  border-top:3px solid #AA6373 !important;
+  border-top:3px solid #985e6d !important;
   margin-left: 20px !important;
 }
 
@@ -116,21 +119,27 @@ z-index: 999;
 
 
 .line  {
-  border-bottom: 2px solid #e5bcc6 !important;
+  border-bottom: 2px solid #985e6d !important;
   width: 90%;
   margin:10px
 }
 .proj {
   display:flex;
-  background-color: #AA6373 !important;
+  background-color: #985e6d !important;
   color:white  !important;
   justify-content: center !important;
   border-radius: 25px;
 }
+.projects h1{
+margin:10%
+}
+.contact {
+  margin:10%
+}
 .mySwiper {
   width: 700px;
   height:400px;
-  margin:10%
+
 }
 .swiper-button-next {
    color: white !important;

@@ -8,8 +8,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Projects() {
   return (
-    <section id='projects'> 
+    <section id='projects' className='projects'> 
      <div className='line'></div>
+     <h1>Projects</h1>
      <Swiper
        breakpoints={{
         // when window width is >= 640px
