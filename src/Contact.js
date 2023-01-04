@@ -50,13 +50,14 @@ export default function Contact() {
 
   return (
     <section id="contact" className='contact'>
-        <h1> &#128236; Contact Me</h1>
+        <h1> <span aria-label='mailbox'>&#128236;</span>  Contact Me</h1>
         <Form onSubmit={handleSubmit(onSubmit)}>
 
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridName" >
                 <Form.Label>Name</Form.Label>
                 <Form.Control
+                aria-label='name'
                   className="input"
                   type="text"
                   name="name"
@@ -66,7 +67,7 @@ export default function Contact() {
                       message: 'Please enter your name',
                     },
                   })}
-                />{' '}
+                />
                 {errors.name && (
                   <span className="errorMessage">{errors.name.message}</span>
                 )}
@@ -75,6 +76,7 @@ export default function Contact() {
                 <Form.Label>Email</Form.Label>
                 <Form.Control
                   className="input"
+                  aria-label='email'
                   type="text"
                   name="email"
                   {...register('email', {
@@ -95,6 +97,7 @@ export default function Contact() {
             <Form.Control
               className="input"
               type="text"
+              aria-label='subject'
               name="subject"
               {...register('subject', {
                 required: { value: true, message: 'Please enter a subject' },
@@ -107,6 +110,7 @@ export default function Contact() {
             <Form.Label>Message</Form.Label>
             <Form.Control
               className="input"
+              aria-label='message'
               as="textarea"
               name="message"
               {...register('message', {
@@ -118,6 +122,7 @@ export default function Contact() {
             )}</Form.Group>
 
           <Button
+          className='button'
             as="input"
             type="submit"
             value="Submit"

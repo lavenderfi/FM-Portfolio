@@ -36,16 +36,16 @@ export default function Projects() {
       >
          {projects.map(project => {
       return (
-        <SwiperSlide className='proj'>
+        <SwiperSlide className='proj' key={project.title}>
       <div >
-        <div key={project.title}>
+        <div>
             <h1>{project.title}</h1>
          <p>{project.description}</p> 
  
           <div className="techs">
-            {project.techs.map(tech  => {
+            {project.techs.map((tech,i)  => {
               return (
-                <img src={tech[0]} alt={tech[1]} key={tech[0]}/>
+                <img src={tech[0]} alt={tech[1]} key={i}/>
               )
             })}
           </div>

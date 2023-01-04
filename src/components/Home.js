@@ -1,25 +1,17 @@
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 export default function Home() {
   return (
     <section id='home'><div className='line'></div>
     <div className="home">
       <div>
-      <div className='photo' aria-label={'Fiona Murray\'s profile pictures'}/>
+      <div className='photo' aria-label={'image'} alt={`Fiona's picture`}/>
       <h1>FIONA MURRAY</h1></div>
       <div style={{ padding: '5px' }}>
-        <a
-          href={require('../assets/Resume.pdf')}
-          download="Fiona-Murray-Resume"
-        >
-          <Button className="btn btn-dark btn-sm" style={{
-              margin: '5px',
-              backgroundColor: '#AA6373',
-              border: 'none',
-            }}>
-            My Resume
-          </Button>
-        </a>
+      <a className='btn btn-dark' role='button'href={require('../assets/Resume.pdf')}
+          download="Fiona-Murray-Resume">
+              Resume
+              </a>  
   
       <Card>
         <Card.Body>

@@ -6,7 +6,7 @@ export default function Experience() {
       <div className='line'></div>
     <div className="experience">  
     <div className='edu'>
-    <h2> &#x1F4DA; Education</h2>
+    <h2> <span aria-label='books'>&#x1F4DA;</span> Education</h2>
       <Card>
         <Card.Body>
           <Card.Title>Grace Hopper Program at FullStack Academy</Card.Title>
@@ -29,7 +29,7 @@ export default function Experience() {
         </Card.Body>
       </Card>
       </div>
-          <h2 style={{padding:'10px'}}> &#128187; Technologies</h2>
+          <h2 style={{padding:'10px'}}> <span aria-label='computer'>&#128187;</span>  Technologies</h2>
         <div className='techies'>
   
 
