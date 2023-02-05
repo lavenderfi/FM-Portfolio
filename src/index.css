@@ -38,24 +38,19 @@ margin:10%;
   background-color: #823f4f !important;
 }
 
-.photo {
+.photo{
   width:300px;
   border-radius: 50%;
   border:3px solid #985e6d;
   height: 300px;
-  background: url('/public/picpic.jpg') center center no-repeat;
-  background: url('/public/one.jpg') center center no-repeat;
   background-size: 300px 300px;
+  background-image: url('../public/picpic.jpg');
   transition: 500ms;
+  overflow: hidden;
 }
-.photo:hover{
-  transition: 500ms;
-  width:300px;
-  border-radius: 50%;
-  border:3px solid #985e6d;
-  height: 300px;
-  background: url('/public/picpic.jpg') center center no-repeat;
-  background-size: 300px 300px;
+.photo img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .socials img {
   padding:5px;

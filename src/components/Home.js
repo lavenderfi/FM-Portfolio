@@ -1,11 +1,21 @@
 import { Card } from 'react-bootstrap';
+import { useState } from 'react';
+
 
 export default function Home() {
+  const [show, setShow] = useState(true)
+
   return (
     <section id='home'><div className='line'></div>
     <div className="home">
       <div>
-      <div className='photo' aria-label={'image'} alt={`Fiona's picture`}/>
+      <div aria-label={'image'} onMouseOver={() => setShow(false)}
+      onMouseOut={() => setShow(true)}
+      className='photo'
+      >
+        <img  src={'/one.jpg'} alt={`Fiona's head-shot`} style={{ opacity: show ? 1 : 0, transition: show ? '0.4s' : '0.4s' }}/>
+      </div>
+
       <h1>FIONA MURRAY</h1></div>
       <div style={{ padding: '5px' }}>
       <a className='btn btn-dark' role='button'href={require('../assets/Resume.pdf')}
