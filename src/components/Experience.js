@@ -39,9 +39,9 @@ export default function Experience() {
           <ListGroup className="list" variant="flush">
             <ListGroup.Item className="item">JavaScript</ListGroup.Item>
             <ListGroup.Item className="item">Node.js</ListGroup.Item>
-            <ListGroup.Item className="item">HTML</ListGroup.Item>
-            <ListGroup.Item className="item">CSS</ListGroup.Item>
+            <ListGroup.Item className="item">HTML5/CSS3</ListGroup.Item>
             <ListGroup.Item className="item">Python</ListGroup.Item>
+            <ListGroup.Item className="item">TypeScript</ListGroup.Item>
           </ListGroup>
           </Card.Body>
           </Card>
@@ -49,12 +49,14 @@ export default function Experience() {
             <Card.Body>
           <Card.Title>Libraries/Frameworks</Card.Title>
           <ListGroup className="list" variant="flush">
-            <ListGroup.Item className="item">D3</ListGroup.Item>
+            
             <ListGroup.Item className="item">React</ListGroup.Item>
+            <ListGroup.Item className="item">Next.js</ListGroup.Item>
             <ListGroup.Item className="item">Redux</ListGroup.Item>
             <ListGroup.Item className="item">Bootstrap</ListGroup.Item>
             <ListGroup.Item className="item">Material UI</ListGroup.Item>  
             <ListGroup.Item className="item">Express.js</ListGroup.Item> 
+            <ListGroup.Item className="item">D3</ListGroup.Item>
           </ListGroup>
         </Card.Body>
       </Card>
@@ -64,9 +66,9 @@ export default function Experience() {
           <ListGroup className="list" variant="flush">
           <ListGroup.Item className="item">PostgreSQL</ListGroup.Item>
             <ListGroup.Item className="item">Firebase</ListGroup.Item>
-            <ListGroup.Item className="item">Heroku</ListGroup.Item>
             <ListGroup.Item className="item">Stripe</ListGroup.Item>
             <ListGroup.Item className="item">Git</ListGroup.Item>
+            <ListGroup.Item className="item">Prisma</ListGroup.Item>
           </ListGroup>
         </Card.Body>
       </Card>
