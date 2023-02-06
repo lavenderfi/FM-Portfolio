@@ -1,12 +1,28 @@
-import projects from './projectData'
+import {projects,descriptions} from './projectData'
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-
+import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
 import { Autoplay, Navigation, Pagination,A11y} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Button from 'react-bootstrap/Button'
 
 export default function Projects() {
+  const [show, setShow] = useState(false);
+  let [current,setCurrent] = useState(0)
+  const handleClose = () => {
+    setShow(false)
+    ;}
+  const handleShow = (e) => {
+    setShow(true);
+    setCurrent(e.target.value)
+  }
+  const chooseDescription = () => {
+    let proj = descriptions.filter(proj => {
+      return Number(current) === Number(proj.id)
+    })
+    return `${proj[0].description}`
+  }
   return (
     <section id='projects' className='projects'> 
      <div className='line'></div>
@@ -36,12 +52,13 @@ export default function Projects() {
       >
          {projects.map(project => {
       return (
-        <SwiperSlide className='proj' key={project.title}>
+        <div>
+        <SwiperSlide className='proj' key={project.title} style={{borderRadius:'10px'}}>
       <div >
         <div>
             <h1>{project.title}</h1>
          <p>{project.description}</p> 
- 
+ <Button size='sm' onClick={handleShow} value={project.id}>More</Button>
           <div className="techs">
             {project.techs.map((tech,i)  => {
               return (
@@ -64,11 +81,18 @@ export default function Projects() {
               Walk-Through
               </a>
            } </div>   
-           </div>   
+           </div>  
+           
              </SwiperSlide>
+                    
+             </div>
       )
     })}
-      
+       <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered style={{color:'black'}}>
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          {chooseDescription()}</Modal.Body>
+      </Modal>
         </Swiper>
 
 

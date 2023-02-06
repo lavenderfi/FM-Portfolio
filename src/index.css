@@ -136,20 +136,36 @@ z-index: 999;
 }
 .proj {
   display:flex;
-  background-color: #985e6d !important;
+  background-color: #494e6b !important;
   color:white  !important;
   justify-content: center !important;
   border-radius: 25px;
 }
 .projects h1{
-margin:10%
+margin:5%
 }
 .projects a {
-  background-color: #494e6b;
-  border:none
+  background-color: #985e6d;
+  border:none;
+  box-shadow: 1px 1px 1px black;
 }
 .projects a:hover {
-  background-color: #31354e;
+  background-color: #823f4f;
+  box-shadow: 1px 1px 1px #192231;
+}
+.projects button {
+  background-color: #985e6d;
+  border:none;
+  box-shadow: 1px 1px 1px #192231;
+}
+.projects button:hover {
+  background-color: #823f4f;
+  box-shadow: 1px 1px 1px #192231;
+}
+.projects button:focus {
+  background-color: #823f4f;
+  box-shadow: 1px 1px 1px #192231;
+  outline: none !important;
 }
 .contact {
   margin:10%
