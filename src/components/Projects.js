@@ -9,7 +9,8 @@ import Button from 'react-bootstrap/Button'
 
 export default function Projects() {
   const [show, setShow] = useState(false);
-  let [current,setCurrent] = useState(0)
+  const [current,setCurrent] = useState(0)
+  
   const handleClose = () => {
     setShow(false)
     ;}
@@ -24,7 +25,7 @@ export default function Projects() {
     return `${proj[0].description}`
   }
   return (
-    <section id='projects' className='projects'> 
+    <div id='projects' className='projects'> 
      <div className='line'></div>
      <h1>Projects</h1>
      <Swiper
@@ -52,8 +53,8 @@ export default function Projects() {
       >
          {projects.map(project => {
       return (
-        <div>
-        <SwiperSlide className='proj' key={project.title} style={{borderRadius:'10px'}}>
+        <div key={project.description}>
+        <SwiperSlide className='proj' style={{borderRadius:'10px'}}>
       <div >
         <div>
             <h1>{project.title}</h1>
@@ -61,6 +62,7 @@ export default function Projects() {
  <Button size='sm' onClick={handleShow} value={project.id}>More</Button>
           <div className="techs">
             {project.techs.map((tech,i)  => {
+
               return (
                 <img src={tech[0]} alt={tech[1]} key={i}/>
               )
@@ -96,6 +98,6 @@ export default function Projects() {
         </Swiper>
 
 
-    </section>
+    </div>
   );
 }

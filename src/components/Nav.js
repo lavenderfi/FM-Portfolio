@@ -6,6 +6,7 @@ export default function NavBar() {
   return (
     <Navbar className="navbar">
       <Nav className='links'>
+
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#experience">About</Nav.Link>
         <Nav.Link href="#projects">Projects</Nav.Link>

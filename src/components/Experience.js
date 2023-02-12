@@ -7,7 +7,6 @@ export default function Experience() {
       <div className="experience">
         <div className="edu">
           <h2>
-            {' '}
             <span aria-label="books">&#x1F4DA;</span> Education
           </h2>
           <Card>

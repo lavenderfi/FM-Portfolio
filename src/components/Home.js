@@ -5,7 +5,7 @@ export default function Home() {
   const [show, setShow] = useState(true);
 
   return (
-    <section id="home">
+    <div id="home">
       <div className="line"></div>
       <div className="home">
         <div>
@@ -65,6 +65,6 @@ export default function Home() {
           </small>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
