@@ -1,4 +1,15 @@
-const projects = [
+const projects = [ 
+   {
+    title: 'SolePost',
+    id:2,
+    description: 'MultiMedia blog website for sneakerheads',
+    techs: [
+      ['/jslogo.png', 'javascript-logo'],
+      ['/logoStrapi.svg', 'strapi-logo'],
+      ['/logoNext.png', 'next.js-logo'],
+    ],
+    github: 'https://github.com/THEMELLIPSIS2',
+  },
   {
     title: 'Webby',
     id:0,
@@ -31,16 +42,7 @@ const projects = [
     github: 'https://github.com/Sassy-Software-Engineers/Grace-Shopper',
     live: 'https://every-daisy.onrender.com/',
   },
-  {
-    title: 'Eat Up!',
-    id:2,
-    description: 'Recipe generator using the Tasty API',
-    techs: [
-      ['/jslogo.png', 'javascript-logo'],
-      ['/logo8.png', 'react.js-logo'],
-    ],
-    github: 'https://github.com/lavenderfi/Eat-Up',
-  },
+
   {
     title: 'Campus Tracker',
     id:3,
@@ -72,7 +74,7 @@ const descriptions = [
   {
     id:2,
     description:
-      'A solely front-end application, I built this as someone who struggles to think of something to eat every day. I wanted to show successfully fetching data from a pre-made API, and working with that data',
+      'This is a multimedia blog website built for a client alongside two other developers, where I acted as the lead developer. It is managed through Strapi, a headless CMS, with a Next.js front end. I built out a majority of the front end, including a playlist feature and a calendar feature.',
   },
   {
     id:3,
