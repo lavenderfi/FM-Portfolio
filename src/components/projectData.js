@@ -40,7 +40,6 @@ const projects = [
       ['/logo7.png', 'PostgreSQL-logo'],
     ],
     github: 'https://github.com/Sassy-Software-Engineers/Grace-Shopper',
-    live: 'https://every-daisy.onrender.com/',
   },
 
   {
